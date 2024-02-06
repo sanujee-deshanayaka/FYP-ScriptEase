@@ -1,0 +1,40 @@
+{
+    "url": "https://www.saucedemo.com/",
+    "suits": {
+        "BATSuit": {
+            "LoginModule": {
+                "ValidLoginScenario": {
+                    "step1": "Enter Admin in Username",
+                    "step2": "Enter 123 in Password",
+                    "step3": "Click Login button"
+                }
+            }
+        },
+        "RegressionSuit": {
+            "LoginModule": {
+                "ValidLoginScenario": {
+                    "step1": "Enter Admin in Username",
+                    "step2": "Enter 123 in Password",
+                    "step3": "Click Login button"
+                },
+                "InvalidUsernameScenario": {
+                    "step1": "Enter Admin123 in Username",
+                    "step2": "Enter 123 in Password",
+                    "step3": "Click Login button"
+                }
+            },
+            "InvalidLoginModule": {
+                "InvalidUsernameScenario": {
+                    "step1": "Enter Admin123 in Username",
+                    "step2": "Enter 123 in Password",
+                    "step3": "Click Login button"
+                },
+                "InvalidPasswordScenario": {
+                    "step1": "Enter Admin in Username",
+                    "step2": "Enter Admin in Password",
+                    "step3": "Click Login button"
+                }
+            }
+        }
+    }
+}

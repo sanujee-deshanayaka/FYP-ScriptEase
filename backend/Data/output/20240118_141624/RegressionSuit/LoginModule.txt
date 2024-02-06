@@ -1,0 +1,14 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+
+driver = webdriver.Chrome()
+
+def ValidLoginScenario(driver):
+	driver.get('https://www.saucedemo.com/')
+	driver.findElement(By.id('user-name')).sendKeys('Admin')
+	driver.findElement(By.id('password')).sendKeys('123')
+	driver.find_element(By.id('login-button')).click()
+	driver.findElement(By.id('user-name')).sendKeys('Admin123')
+	driver.findElement(By.id('password')).sendKeys('123')
+	driver.find_element(By.id('login-button')).click()
