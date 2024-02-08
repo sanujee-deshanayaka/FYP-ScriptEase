@@ -65,7 +65,7 @@ export default function Home() {
       <div class="w-1/3 md:w-1/2 lg:w-1/3 h-full bg-zinc-800 sm:w-4/4">
         <div class="justify-content items-center">
           <Image src={Logo} width={300} height={54} class='mx-auto mt-10 ' />
-          <p className='text-center my-5 text-light-500 text-xl font-black font-console tracking-widest'>SCRIPTEASY</p>
+          <p className='text-center my-5 text-light-500 text-xl font-black font-console tracking-widest'>SCRIPTEASE</p>
           <p class="mx-5 text-center text-light-500 ">
             Pariatur velit nisi enim non labore consequat exercitation do minim dolore nostrud aliquip. Laboris cupidatat tempor cillum nulla velit occaecat occaecat.
           </p>
@@ -152,6 +152,7 @@ export default function Home() {
                   type="button"
                   className="text-white bg-yellow-600 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 mx-2"
                   // onClick={handleDownload}
+                  
                 >
                   Download Script
                 </button>

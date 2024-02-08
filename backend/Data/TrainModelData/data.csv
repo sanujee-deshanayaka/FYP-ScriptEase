@@ -1,0 +1,426 @@
+Text,Category
+Enter,Verb
+Click,Verb
+Type,Verb
+Select,Verb
+Submit,Verb
+Clear,Verb
+Check,Verb
+Hover,Verb
+Press,Verb
+Tap,Verb
+Navigate,Verb
+Verify,Verb
+Scroll,Verb
+View,Verb
+Create,Verb
+Delete,Verb
+Update,Verb
+Search,Verb
+Close,Verb
+Toggle,Verb
+Sort,Verb
+Edit,Verb
+Save,Verb
+Cancel,Verb
+Validate,Verb
+Filter,Verb
+Refresh,Verb
+Expand,Verb
+Collapse,Verb
+Upload,Verb
+Download,Verb
+Read,Verb
+Copy,Verb
+Paste,Verb
+Username,Element
+Password,Element
+Email,Element
+Phone,Element
+Checkbox,Element
+Radio button,Element
+FirstName,Element
+LastName,Element
+Gender,Element
+Country,Element
+City,Element
+State,Element
+ZipCode,Element
+SecurityQuestion,Element
+SecurityAnswer,Element
+AccountNumber,Element
+Menu,Element
+CardNumber,Element
+Slider,Element
+CVV,Element
+Logout button,Element
+Continue button,Element
+AccountType,Element
+Footer,Element
+Header,Element
+Navigation bar,Element
+Add to Cart button,Element
+Login,Element
+Dropdown,Element
+Sidebar,Element
+Quantity,Element
+Price,Element
+Product name,Element
+Image,Element
+Inventory name,Element
+Title,Element
+Admin,Testdata
+User,Testdata
+Guest,Testdata
+Moderator,Testdata
+Superuser,Testdata
+Name(A to Z),Testdata
+Name(Z to A),Testdata
+Price(low to high),Testdata
+Price(high to low),Testdata
+Text,Testdata
+User123,Testdata
+Test,Testdata
+Demo,Testdata
+Example,Testdata
+123456,Testdata
+standard_user,Testdata
+secret_sauce,Testdata
+Special!@#,Testdata
+2024,Testdata
+January,Testdata
+March,Testdata
+1st,Testdata
+10.99,Testdata
+20.99,Testdata
+qwerty,Testdata
+ProductA,Testdata
+ProductB,Testdata
+TestUser1,Testdata
+TestUser2,Testdata
+1,Testdata
+2,Testdata
+123456,Testdata
+PasswordTest,Testdata
+FirstName,Testdata
+LastName,Testdata
+Email,Testdata
+Enter,Verb
+Click,Verb
+Type,Verb
+Select,Verb
+Submit,Verb
+Clear,Verb
+Check,Verb
+Hover,Verb
+Press,Verb
+Tap,Verb
+Navigate,Verb
+Verify,Verb
+Logout,Verb
+Scroll,Verb
+View,Verb
+Create,Verb
+Delete,Verb
+Update,Verb
+Search,Verb
+Close,Verb
+Toggle,Verb
+Sort,Verb
+Edit,Verb
+Save,Verb
+Cancel,Verb
+Validate,Verb
+Filter,Verb
+Refresh,Verb
+Expand,Verb
+Collapse,Verb
+Upload,Verb
+Download,Verb
+Read,Verb
+Copy,Verb
+Paste,Verb
+Username,Element
+Password,Element
+Email,Element
+Phone,Element
+Checkbox,Element
+Radio button,Element
+FirstName,Element
+LastName,Element
+Gender,Element
+Country,Element
+City,Element
+State,Element
+ZipCode,Element
+SecurityQuestion,Element
+SecurityAnswer,Element
+AccountNumber,Element
+Menu,Element
+CardNumber,Element
+Slider,Element
+CVV,Element
+Logout button,Element
+Continue button,Element
+AccountType,Element
+Footer,Element
+Header,Element
+Navigation bar,Element
+Add to Cart button,Element
+Login,Element
+Dropdown,Element
+Sidebar,Element
+Quantity,Element
+Price,Element
+Product name,Element
+Image,Element
+Inventory name,Element
+Title,Element
+Admin,Testdata
+User,Testdata
+Guest,Testdata
+Moderator,Testdata
+Superuser,Testdata
+Name(A to Z),Testdata
+Name(Z to A),Testdata
+Price(low to high),Testdata
+Price(high to low),Testdata
+Text,Testdata
+User123,Testdata
+Test,Testdata
+Demo,Testdata
+Example,Testdata
+123456,Testdata
+standard_user,Testdata
+secret_sauce,Testdata
+Special!@#,Testdata
+2024,Testdata
+January,Testdata
+March,Testdata
+1st,Testdata
+10.99,Testdata
+20.99,Testdata
+qwerty,Testdata
+ProductA,Testdata
+ProductB,Testdata
+TestUser1,Testdata
+TestUser2,Testdata
+1,Testdata
+2,Testdata
+123456,Testdata
+PasswordTest,Testdata
+FirstName,Testdata
+LastName,Testdata
+Email,Testdata
+Click,Verb
+Type,Verb
+Select,Verb
+Submit,Verb
+Clear,Verb
+Check,Verb
+Hover,Verb
+Press,Verb
+Tap,Verb
+Navigate,Verb
+Verify,Verb
+Logout,Verb
+Scroll,Verb
+View,Verb
+Create,Verb
+Delete,Verb
+Update,Verb
+Search,Verb
+Close,Verb
+Toggle,Verb
+Sort,Verb
+Edit,Verb
+Save,Verb
+Cancel,Verb
+Validate,Verb
+Filter,Verb
+Refresh,Verb
+Expand,Verb
+Collapse,Verb
+Upload,Verb
+Download,Verb
+Read,Verb
+Copy,Verb
+Paste,Verb
+Username,Element
+Password,Element
+Email,Element
+Phone,Element
+Checkbox,Element
+Radio button,Element
+FirstName,Element
+LastName,Element
+Gender,Element
+Country,Element
+City,Element
+State,Element
+ZipCode,Element
+SecurityQuestion,Element
+SecurityAnswer,Element
+AccountNumber,Element
+Menu,Element
+CardNumber,Element
+Slider,Element
+CVV,Element
+Logout button,Element
+Continue button,Element
+AccountType,Element
+Footer,Element
+Header,Element
+Navigation bar,Element
+Add to Cart button,Element
+Login,Element
+Dropdown,Element
+Sidebar,Element
+Quantity,Element
+Price,Element
+Product name,Element
+Image,Element
+Inventory name,Element
+Title,Element
+Admin,Testdata
+User,Testdata
+Guest,Testdata
+Moderator,Testdata
+Superuser,Testdata
+Name(A to Z),Testdata
+Name(Z to A),Testdata
+Price(low to high),Testdata
+Price(high to low),Testdata
+Text,Testdata
+User123,Testdata
+Test,Testdata
+Demo,Testdata
+Example,Testdata
+123456,Testdata
+standard_user,Testdata
+secret_sauce,Testdata
+Special!@#,Testdata
+2024,Testdata
+January,Testdata
+March,Testdata
+1st,Testdata
+10.99,Testdata
+20.99,Testdata
+qwerty,Testdata
+ProductA,Testdata
+ProductB,Testdata
+TestUser1,Testdata
+TestUser2,Testdata
+1,Testdata
+2,Testdata
+123456,Testdata
+PasswordTest,Testdata
+FirstName,Testdata
+LastName,Testdata
+Email,Testdata
+Click,Verb
+Type,Verb
+Select,Verb
+Submit,Verb
+Clear,Verb
+Check,Verb
+Hover,Verb
+Press,Verb
+Tap,Verb
+Navigate,Verb
+Verify,Verb
+Logout,Verb
+Scroll,Verb
+View,Verb
+Create,Verb
+Delete,Verb
+Update,Verb
+Search,Verb
+Close,Verb
+Toggle,Verb
+Sort,Verb
+Edit,Verb
+Save,Verb
+Cancel,Verb
+Validate,Verb
+Filter,Verb
+Refresh,Verb
+Expand,Verb
+Collapse,Verb
+Upload,Verb
+Download,Verb
+Read,Verb
+Copy,Verb
+Paste,Verb
+Username,Element
+Password,Element
+Email,Element
+Phone,Element
+Checkbox,Element
+Radio button,Element
+FirstName,Element
+LastName,Element
+Gender,Element
+Country,Element
+City,Element
+State,Element
+ZipCode,Element
+SecurityQuestion,Element
+SecurityAnswer,Element
+AccountNumber,Element
+Menu,Element
+CardNumber,Element
+Slider,Element
+CVV,Element
+Logout button,Element
+Continue button,Element
+AccountType,Element
+Footer,Element
+Header,Element
+Navigation bar,Element
+Add to Cart button,Element
+Login,Element
+Dropdown,Element
+Sidebar,Element
+Quantity,Element
+Price,Element
+Product name,Element
+Image,Element
+Inventory name,Element
+Title,Element
+Admin,Testdata
+User,Testdata
+Guest,Testdata
+Moderator,Testdata
+Superuser,Testdata
+Name(A to Z),Testdata
+Name(Z to A),Testdata
+Price(low to high),Testdata
+Price(high to low),Testdata
+Text,Testdata
+User123,Testdata
+Test,Testdata
+Demo,Testdata
+Example,Testdata
+123456,Testdata
+standard_user,Testdata
+secret_sauce,Testdata
+Special!@#,Testdata
+2024,Testdata
+January,Testdata
+March,Testdata
+1st,Testdata
+10.99,Testdata
+20.99,Testdata
+qwerty,Testdata
+ProductA,Testdata
+ProductB,Testdata
+TestUser1,Testdata
+TestUser2,Testdata
+1,Testdata
+2,Testdata
+123456,Testdata
+PasswordTest,Testdata
+FirstName,Testdata
+LastName,Testdata
+Email,Testdata

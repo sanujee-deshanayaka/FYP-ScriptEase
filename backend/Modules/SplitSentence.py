@@ -1,15 +1,35 @@
 import re
+from Modules.SplitdataModel import split_data_model
 
 def split_sentence(sentence):
-    enter_pattern = re.compile(r'\bEnter\b\s*(?P<test_data>\w+)\s*\b(in)\b\s*(?P<element>\w+)')
-    click_pattern = re.compile(r'\bClick\b\s*(?P<element>\w+)?\s')
+    full_sentence = sentence.split()
 
-    enter_match = enter_pattern.match(sentence)
-    if enter_match:
-        return 'Enter', enter_match.group('element'), enter_match.group('test_data')
+    stop_words = [
+        "for",
+        "the",
+        "do",
+        "did",
+        "does",
+        "this",
+        "to",
+        "of",
+        "with",
+        "and",
+        "or",
+        "have",
+        "has",
+        "as",
+        "is",
+        "in",
+        "button"
+    ]
 
-    click_match = click_pattern.match(sentence)
-    if click_match:
-        return 'Click', click_match.group('element'), 'Null'
+    words_list = []
+    for word in full_sentence:
+        if word not in stop_words:
+            words_list.append(word)
+            print(words_list)
 
-    return "Invalid input"
+    prediction_dic = split_data_model(words_list)
+
+    return prediction_dic

@@ -6,6 +6,7 @@ from Modules.FindLocator import find_locator
 from Modules.GenerateTestScript import generate_test_script
 from Modules.WriteTestFile import write_test_file
 from Modules.CompressFolder import compress_folder
+from Modules.SplitdataModel import split_data_model
 import os
 from datetime import datetime
 from fastapi.responses import JSONResponse
@@ -43,7 +44,6 @@ async def create_upload_file(file: UploadFile = File(...)):
         return e
     
 
-# @app.get('/{file_path}')
 def main(file_path):
     directory = 'Data/input/'
     full_path = os.path.join(directory, file_path)
@@ -51,6 +51,7 @@ def main(file_path):
 
     if json_data:
         print("JSON data read successfully:")
+
 
     # Get current date and time
     current_datetime = datetime.now()
@@ -73,9 +74,9 @@ def main(file_path):
                     print(f"      Step {step_number}: {step_description}")
                     splitted_sentence = split_sentence(step_description)
 
-                    verb = splitted_sentence[0]
-                    element = splitted_sentence[1]
-                    test_data = splitted_sentence[2]
+                    verb = splitted_sentence.get('Verb')
+                    element = splitted_sentence.get('Element')
+                    test_data = splitted_sentence.get('Testdata')
                     print(f"Verb: {verb} \t Element :{element} \t Test Data : {test_data}")
 
                     locator = find_locator(json_data["url"], element)
