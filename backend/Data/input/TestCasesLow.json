@@ -1,0 +1,17 @@
+{
+    "url": "https://www.saucedemo.com/",
+    "suits": {
+        "BATSuit": {
+            "LoginModule": {
+                "ValidLoginScenario": {
+                    "step1": "Enter Admin in Username",
+                    "step2": "Enter Admin@123 in Password",
+                    "step3": "Click Login button",
+		    "step4": "Verify the Product title"
+                }
+            }
+        }
+    }
+}
+
+				

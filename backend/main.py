@@ -7,11 +7,13 @@ from Modules.GenerateTestScript import generate_test_script
 from Modules.WriteTestFile import write_test_file
 from Modules.CompressFolder import compress_folder
 from Modules.SplitdataModel import split_data_model
+from Modules.ExecuteScript import execute_script
 import os
 from datetime import datetime
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
+from selenium import webdriver
 
 app = FastAPI()
 
@@ -57,6 +59,10 @@ def main(file_path):
     current_datetime = datetime.now()
     formatted_datetime = current_datetime.strftime("%Y%m%d_%H%M%S")
 
+    driver = webdriver.Chrome()
+    driver.get(json_data["url"])
+    driver.implicitly_wait(10)
+
     # Iterate through each suit
     for suit_name, suit_data in json_data["suits"].items():
         print(f"Suit: {suit_name}")
@@ -79,14 +85,18 @@ def main(file_path):
                     test_data = splitted_sentence.get('Testdata')
                     print(f"Verb: {verb} \t Element :{element} \t Test Data : {test_data}")
 
-                    locator = find_locator(json_data["url"], element)
+                    locator = find_locator(driver, element)
                     print(f"\nLocator:  {locator}")
 
                     generated_test_scripts = generate_test_script(verb, locator, test_data)
                     print(f"\nGenerated Script: {generated_test_scripts}")
 
+                    execute_script(driver, generated_test_scripts)
+
                     new_file_path = write_test_file(json_data["url"], formatted_datetime, suit_name, module_name, test_case, generated_test_scripts)
 
+    # driver.quit()
+     
     new_file_path = compress_folder(f"Data/output/{formatted_datetime}")
 
     print(str(f"Generated Zip: {new_file_path}.zip"))
