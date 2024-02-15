@@ -88,7 +88,7 @@ def main(file_path):
                     locator = find_locator(driver, element)
                     print(f"\nLocator:  {locator}")
 
-                    generated_test_scripts = generate_test_script(verb, locator, test_data)
+                    generated_test_scripts = generate_test_script(verb, locator, element, step_description, test_data)
                     print(f"\nGenerated Script: {generated_test_scripts}")
 
                     execute_script(driver, generated_test_scripts)

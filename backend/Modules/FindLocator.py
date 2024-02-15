@@ -9,20 +9,46 @@ def find_locator(driver, element):
     # driver.quit()
 
     soup = BeautifulSoup(html_content, 'html.parser')
-    div_elements = soup.find_all(['div', 'input'])
+    div_elements = soup.find_all(['div', 'input', 'span'])
+    # print('Span: ', soup.find_all(['span']))
 
     for div_element in div_elements:
         element_id = div_element.get('id')
+        # print("ID:", element_id)
         element_placeholder = div_element.get('placeholder')
+        # print("Placeholder:", element_placeholder)
         element_value = div_element.get('value')
+        # print('Value: ', element_value)
+        element_text = div_element.text
+        # print("Text:", element_text)
 
-        if (element_id == element) or (element_placeholder == element) or (element_value == element):
+        # print("Element:", element)
+
+
+        # --------java--------
+
+        # if (element_id == element) or (element_placeholder == element) or (element_value == element) or (element_text == element):
+        #     if element_id:
+        #         return f'By.id("{element_id}")'
+        #     elif element_value:
+        #         return f'By.XPATH, "//{div_element}[@value=\'{element_value}\']"'
+        #     elif element_placeholder:
+        #         return f'By.xpath(//{div_element.name}[@value=\'{element_placeholder}\']")'
+        #     elif element_text:
+        #         return f'By.xpath(//{div_element.name}[text()=\'{element_text}\']")'
+            
+
+        # ------- python---------
+            
+        if (element_id == element) or (element_placeholder == element) or (element_value == element) or (element_text == element):
             if element_id:
                 return f'By.ID, "{element_id}"'
-            elif element_value:
-                return f'By.XPATH, "//{div_element}[@value=\'{element_value}\']"'
+            # elif element_value:
+            #     return f'By.XPATH, "//{div_element}[@value=\'{element_value}\']"'
             elif element_placeholder:
-                return f'By.XPATH, "//{div_element}[@value=\'{element_placeholder}\']"'
+                return f'By.XPATH, "//{div_element.name}[@value=\'{element_placeholder}\']"'
+            elif element_text:
+                return f'By.XPATH, "//{div_element.name}[text()=\'{element_text}\']"'
 
     return "Invalid input"
 

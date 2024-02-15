@@ -34,7 +34,7 @@ Read,Verb
 Copy,Verb
 Paste,Verb
 Username,Element
-Product,Element
+Products,Element
 Password,Element
 Email,Element
 Phone,Element
@@ -66,7 +66,7 @@ Dropdown,Element
 Sidebar,Element
 Quantity,Element
 Price,Element
-Product name,Element
+Products,Element
 Image,Element
 Inventory name,Element
 Admin,Testdata
@@ -87,6 +87,8 @@ Example,Testdata
 standard_user,Testdata
 secret_sauce,Testdata
 Special!@#,Testdata
+secret_sauce,Testdata
+standard_user,Testdata
 2024,Testdata
 January,Testdata
 March,Testdata
@@ -188,6 +190,7 @@ Text,Testdata
 User123,Testdata
 Test,Testdata
 Demo,Testdata
+secret_sauce,Testdata
 Example,Testdata
 123456,Testdata
 standard_user,Testdata
@@ -277,7 +280,7 @@ Dropdown,Element
 Sidebar,Element
 Quantity,Element
 Price,Element
-Product name,Element
+Products,Element
 Image,Element
 Inventory name,Element
 Admin,Testdata
@@ -291,6 +294,7 @@ Price(low to high),Testdata
 Price(high to low),Testdata
 Text,Testdata
 User123,Testdata
+secret_sauce,Testdata
 Test,Testdata
 Demo,Testdata
 Example,Testdata
@@ -382,13 +386,14 @@ Dropdown,Element
 Sidebar,Element
 Quantity,Element
 Price,Element
-Product name,Element
+Products,Element
 Image,Element
 Inventory name,Element
 Admin,Testdata
 User,Testdata
 Guest,Testdata
 Moderator,Testdata
+secret_sauce,Testdata
 Superuser,Testdata
 Name(A to Z),Testdata
 Name(Z to A),Testdata

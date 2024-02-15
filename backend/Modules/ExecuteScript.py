@@ -8,10 +8,9 @@ def execute_script(driver, generated_test_script):
     try:
         # Assuming driver is already instantiated and navigated to the login page
         # Find the login button and click it
-        # login_button = driver.find_element(By.ID, 'login_button_id')  # Adjust this according to your HTML
-        # login_button.click()
-        driver.find_element(By.ID, "user-name").send_keys("standard_user")
-        generated_test_script
+        # driver.find_element(By.ID, "user-name").send_keys("standard_user")
+        # generated_test_script
+        eval(generated_test_script)
         # driver.find_element(By.ID, "password").send_keys("secret_sauce")
         # driver.find_element(By.ID, "login-button").click()
 
