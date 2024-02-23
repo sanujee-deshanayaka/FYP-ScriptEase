@@ -17,7 +17,3 @@ def compress_folder(folder_path, archive_format='zip'):
 
     print(f"Folder '{folder_path}' compressed successfully. Archive file: {archive_path}")
     return folder_path
-
-# # Example usage:
-# folder_to_compress = "path/to/your/folder"
-# compress_folder(folder_to_compress)

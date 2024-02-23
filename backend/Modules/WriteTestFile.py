@@ -26,7 +26,16 @@ def write_test_file(url, formatted_datetime, suit_name, module_name, test_case_n
             # file.write(test_case + "\n")
             file.write("\t" + test_case + "\n")
 
+        file.write("\n" + "driver.quit()" + "\n")
+
     return {"file_path": file_path}
 
 def headerFiles():
-    return ["from selenium import webdriver", "from selenium.webdriver.common.by import By", "\n", "driver = webdriver.Chrome()"]
+    return [
+        "from selenium import webdriver",
+        "from selenium.webdriver.chrome.service import Service",
+        "from selenium.webdriver.common.by import By",
+        "import time",
+        "\n", 
+        "service_obj = Service(executable_path='chromedriver.exe')",
+        "driver = webdriver.Chrome(service=service_obj)"]
