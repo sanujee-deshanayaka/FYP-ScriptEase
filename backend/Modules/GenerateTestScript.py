@@ -4,9 +4,9 @@ def generate_test_script(verb, locator, element, step_description, test_data=Non
     elif verb.lower() == 'click':
         script = f"driver.find_element({locator}).click()"
     elif verb.lower() == 'navigate':
-        script = f"driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));"
+        script = f"driver.implicitly_wait(2)"
     elif verb.lower() == 'verify':
-        script = f"Assert.assertEquals(driver.find_element({locator}).text, {element}, {step_description})"
+        script = f'assert {locator}.text, "{element}"'
     else:
         script = "Unsupported action verb"
 
