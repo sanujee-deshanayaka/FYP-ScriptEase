@@ -7,8 +7,8 @@
                     "step1": "Enter standard_user in Username",
                     "step2": "Enter secret_sauce in Password",
                     "step3": "Click Login button",
-		            "step4": "Navigate to the Products page",
-		            "step5": "Verify the Products title"
+		    "step4": "Navigate to the Products page",
+		    "step5": "Verify the Products title"
                 }
             }
         }

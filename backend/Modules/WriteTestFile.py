@@ -8,9 +8,7 @@ def write_test_file(url, formatted_datetime, suit_name, module_name, test_case_n
 
     file_path = os.path.join(output_folder, f"{module_name}.txt")
 
-    test_cases = [
-        generated_test_scripts,
-    ]
+    print(generated_test_scripts)
 
     with open(file_path, "a") as file:
         file.seek(0, os.SEEK_END)
@@ -19,14 +17,15 @@ def write_test_file(url, formatted_datetime, suit_name, module_name, test_case_n
             for header in headers:
                 file.write(header + "\n")
 
-            file.write(f"\ndef {test_case_name}(driver):\n")
-            file.write(f"\tdriver.get('{url}')\n")
+        file.write(f"\ndef {test_case_name}(driver):\n")
+        file.write(f"\tdriver.get('{url}')\n")
 
-        for test_case in test_cases:
-            # file.write(test_case + "\n")
-            file.write("\t" + test_case + "\n")
+        # Iterate over test cases and write them one by one
+        for test_case in generated_test_scripts:
+            file.write(f"\t{test_case}\n")
 
-        file.write("\n" + "driver.quit()" + "\n")
+    with open(file_path, "a") as file:
+        file.write(f"\tdriver.quit()\n")
 
     return {"file_path": file_path}
 
