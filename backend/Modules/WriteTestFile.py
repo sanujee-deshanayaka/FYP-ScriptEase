@@ -8,8 +8,6 @@ def write_test_file(url, formatted_datetime, suit_name, module_name, test_case_n
 
     file_path = os.path.join(output_folder, f"{module_name}.txt")
 
-    print(generated_test_scripts)
-
     with open(file_path, "a") as file:
         file.seek(0, os.SEEK_END)
         if file.tell() == 0:
@@ -24,8 +22,10 @@ def write_test_file(url, formatted_datetime, suit_name, module_name, test_case_n
         for test_case in generated_test_scripts:
             file.write(f"\t{test_case}\n")
 
-    with open(file_path, "a") as file:
         file.write(f"\tdriver.quit()\n")
+
+    # with open(file_path, "a") as file:
+    #     file.write(f"\tdriver.quit()\n")
 
     return {"file_path": file_path}
 

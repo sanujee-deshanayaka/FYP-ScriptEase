@@ -98,13 +98,16 @@ def main(file_path):
 
                     # Append generated test script to the list
                     all_generated_scripts.append(generated_test_scripts)
+                    print(all_generated_scripts)
+
+                new_file_path = write_test_file(json_data["url"], formatted_datetime, suit_name, module_name, test_case, all_generated_scripts)
 
                     # new_file_path = write_test_file(json_data["url"], formatted_datetime, suit_name, module_name, test_case, generated_test_scripts)
 
     # driver.quit()
                     
     # Pass the collected generated test scripts to write_test_file function
-    new_file_path = write_test_file(json_data["url"], formatted_datetime, suit_name, module_name, test_case, all_generated_scripts)
+    # new_file_path = write_test_file(json_data["url"], formatted_datetime, suit_name, module_name, test_case, all_generated_scripts)
      
     new_file_path = compress_folder(f"Data/output/{formatted_datetime}")
 
