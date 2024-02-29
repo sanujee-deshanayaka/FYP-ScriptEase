@@ -15,44 +15,44 @@
         "RegressionSuit": {
             "LoginModule": {
                 "ValidLoginScenario": {
-                    "step1": "Enter standard_user in Username",
-                    "step2": "Enter secret_sauce in Password",
-                    "step3": "Click Login button",
-		    "step4": "Navigate to the Products page",
-		    "step5": "Verify the Products title"
+                    "1": "Enter standard_user in Username",
+                    "2": "Enter secret_sauce in Password",
+                    "3": "Click Login button",
+		    "4": "Navigate to the Products page",
+		    "5": "Verify the Products title"
                 },
                 "InvalidUsernameScenario": {
-                    "step1": "Enter User in Username",
-                    "step2": "Enter secret_sauce in Password",
-                    "step3": "Click Login button",
-		    "step4": "Verify the 'Epic sadface: Username and password do not match any user in this service' error message"
+                    "1": "Enter User in Username",
+                    "2": "Enter secret_sauce in Password",
+                    "3": "Click Login button",
+		    "4": "Verify the 'Epic sadface: Username and password do not match any user in this service' error message"
                 },
                 "InvalidPasswordScenario": {
-                    "step1": "Enter standard_user in Username",
-                    "step2": "Enter secret in Password",
-                    "step3": "Click Login button",
-	            "step4": "Verify the 'Epic sadface: Username and password do not match any user in this service' error message"
+                    "1": "Enter standard_user in Username",
+                    "2": "Enter secret in Password",
+                    "3": "Click Login button",
+	            "4": "Verify the 'Epic sadface: Username and password do not match any user in this service' error message"
                 }
             },
             "ShoppingModule": {
                 "AddToCartScenario": {
-                    "step1": "Enter standard_user in Username",
-                    "step2": "Enter secret_sauce in Password",
-                    "step3": "Click Login button",
-		    "step4": "Navigate to the Products page",
-		    "step5": "Click 'Add to cart' button",
-		    "step6": "Click 'shopping_cart_link'",
-		    "step7": "Verify 'Sauce Labs Backpack' item"
+                    "1": "Enter standard_user in Username",
+                    "2": "Enter secret_sauce in Password",
+                    "3": "Click Login button",
+		    "4": "Navigate to the Products page",
+		    "5": "Click 'Add to cart' button",
+		    "6": "Click 'shopping_cart_link'",
+		    "7": "Verify 'Sauce Labs Backpack' item"
                 },
                 "ContinueShoppingScenario": {
-                    "step1": "Enter standard_user in Username",
-                    "step2": "Enter secret_sauce in Password",
-                    "step3": "Click Login button",
-		    "step4": "Navigate to the Products page",
-		    "step5": "Click 'Add to cart' button",
-		    "step6": "Click 'shopping_cart_link'",
-		    "step7": "Click 'Continue Shopping' button",
-		    "step8": "Verify the Products title"
+                    "1": "Enter standard_user in Username",
+                    "2": "Enter secret_sauce in Password",
+                    "3": "Click Login button",
+		    "4": "Navigate to the Products page",
+		    "5": "Click 'Add to cart' button",
+		    "6": "Click 'shopping_cart_link'",
+		    "7": "Click 'Continue Shopping' button",
+		    "8": "Verify the Products title"
                 }
             }
         }

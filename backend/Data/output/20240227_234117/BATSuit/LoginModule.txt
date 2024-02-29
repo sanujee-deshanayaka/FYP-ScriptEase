@@ -9,9 +9,9 @@ driver = webdriver.Chrome(service=service_obj)
 
 def ValidLoginScenario(driver):
 	driver.get('https://www.saucedemo.com/')
-	driver.find_element(By.ID, "user-name").send_keys("standard_user")
-	driver.find_element(By.ID, "password").send_keys("secret_sauce")
-	driver.find_element(By.ID, "login-button").click()
+	driver.find_element(Invalid input).send_keys("standard_user")
+	driver.find_element(Invalid input).send_keys("secret_sauce")
+	driver.find_element(Invalid input).click()
 	driver.implicitly_wait(2)
-	assert By.XPATH, "//span[text()='Products']".text, "Products"
+	assert Invalid input.text, "Products"
 	driver.quit()

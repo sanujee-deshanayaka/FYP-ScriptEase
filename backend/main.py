@@ -59,12 +59,9 @@ def main(file_path):
     current_datetime = datetime.now()
     formatted_datetime = current_datetime.strftime("%Y%m%d_%H%M%S")
 
-    # Initialize an empty list to store generated test scripts
-    all_generated_scripts = []
-
     driver = webdriver.Chrome()
-    driver.get(json_data["url"])
-    driver.implicitly_wait(10)
+    # driver.get(json_data["url"])
+    # driver.implicitly_wait(10)
 
     # Iterate through each suit
     for suit_name, suit_data in json_data["suits"].items():
@@ -78,9 +75,18 @@ def main(file_path):
             for test_case, steps in test_cases.items():
                 print(f"    Test Case: {test_case}")
 
+                # Initialize an empty list to store generated test scripts
+                all_generated_scripts = []
+
                 # Iterate through each test step in the test case
                 for step_number, step_description in steps.items():
                     print(f"      Step {step_number}: {step_description}")
+
+                    if(step_number == "1"):
+                        print('yes')
+                        driver.get(json_data["url"])
+                        driver.implicitly_wait(10)
+
                     splitted_sentence = split_sentence(step_description)
 
                     verb = splitted_sentence.get('Verb')
@@ -100,14 +106,8 @@ def main(file_path):
                     all_generated_scripts.append(generated_test_scripts)
                     print(all_generated_scripts)
 
+                # Pass the collected generated test scripts to write_test_file function
                 new_file_path = write_test_file(json_data["url"], formatted_datetime, suit_name, module_name, test_case, all_generated_scripts)
-
-                    # new_file_path = write_test_file(json_data["url"], formatted_datetime, suit_name, module_name, test_case, generated_test_scripts)
-
-    # driver.quit()
-                    
-    # Pass the collected generated test scripts to write_test_file function
-    # new_file_path = write_test_file(json_data["url"], formatted_datetime, suit_name, module_name, test_case, all_generated_scripts)
      
     new_file_path = compress_folder(f"Data/output/{formatted_datetime}")
 
